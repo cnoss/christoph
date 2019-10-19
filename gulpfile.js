@@ -75,7 +75,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('clean', del.bind(null, ['tmp/', 'docs/']));
-gulp.task('build', gulp.series(['clean', 'copy-css-files','copy-html-files', 'minify-html', 'copy-font-files', 'copy-images', 'copy-cname' ]));
+gulp.task('build', gulp.series(['clean', 'copy-css-files','copy-html-files', 'minify-html', 'copy-font-files', 'copy-images' ]));
 
 
 gulp.task('criticalcss', function (cb) {
