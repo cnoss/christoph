@@ -8,7 +8,7 @@ const critical = require('critical'); // new
 const del = require('del');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
-
+const pipeline = require('readable-stream').pipeline;
 /*
 const paths = {
   styles: {
@@ -24,6 +24,8 @@ const paths = {
     dest: 'app/js/'
   }
 }*/
+
+
 
 gulp.task('minify-html', () => {
   return gulp.src('docs/*.html')
