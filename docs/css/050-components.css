@@ -1,0 +1,63 @@
+/* ----------------------------------------------------------------------------
+components.css                                                                  
+Enthält alle Regeln zu Komponenten.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* mainHeader
+-----------------------------------------------------------------------------*/
+#mainHeader{
+  margin: var(--xl);
+}
+
+#mainHeader .title,
+#mainHeader .subtitle {
+  text-transform: uppercase;
+  font-size: var(--fontsize-xl);
+}
+
+
+
+/* mainContent
+-----------------------------------------------------------------------------*/
+#mainContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* choiceHolder
+-----------------------------------------------------------------------------*/
+
+.choiceHolder {
+  width: 100%;
+  display:flex;
+  justify-content:space-around;
+  flex-direction: column;
+  padding: var(--l);
+}
+.choiceHolder .btn {
+  color: white;
+  background-color: var(--color-button-bg);
+  border: none;
+  padding: 20px;
+  margin: var(--xxs);
+}
+
+@media only screen and (min-width: 400px/*vp-xs*/) {
+  .choiceHolder {
+    flex-direction: row;
+  }
+	.choiceHolder .btn {
+    width: 100%;
+  }
+}
+

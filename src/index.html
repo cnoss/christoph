@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<!-- ############################################################################ 
+
+https://christophsteinke.com
+vom Christian Noss
+c.noss@mac.com
+https://twitter.com/cnoss
+    
+############################################################################ -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CHRISTOPH STEINKE</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/010-resets.css">
+  <link rel="stylesheet" href="css/020-base.css">
+  <link rel="stylesheet" href="css/030-typography.css">
+  <link rel="stylesheet" href="css/040-layout.css">
+  <link rel="stylesheet" href="css/050-components.css">
+  <link rel="stylesheet" href="css/060-addons.css">
+
+</head>
+
+<body>
+  <div id="globalWrap">
+    <div id="bg"></div>
+
+    <header id="mainHeader">
+      <h1 class="title">Christoph Steinke</h1>
+      <h2 class="subtitle">Künstler</h2>
+    </header>
+
+    <main id="mainContent">
+      <section id="start" class="screen">
+        <div class="choiceHolder">
+          <button class="btn" data-js-trigger="gemaelde">Gemälde</button>
+          <button class="btn" data-js-trigger="aktzeichnungen">Aktzeichnungen</button>
+        </div>
+      </section>
+
+      <section id="gemaelde" class="screen">
+        <div class="masonry-wrapper">
+          <div class="masonry">
+            <figure class="masonry-item">
+              <img src="/img/181118_face05_final_ergebnis.webp" alt="Dummy Image" class="masonry-content">
+              <figcaption>
+                Kleiner Text zum Bild
+              </figcaption>
+            </figure>
+            <figure class="masonry-item">
+              <img src="/img/190430_untitled_01_ergebnis.webp" alt="Dummy Image" class="masonry-content">
+            </figure>
+            <figure class="masonry-item">
+              <img src="/img/190606_obsession_master_ergebnis.webp" alt="Dummy Image" class="masonry-content">
+            </figure>
+            <figure class="masonry-item">
+              <img src="/img/190730_theartofspanking_master_ergebnis.webp" alt="Dummy Image" class="masonry-content">
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer id="mainFooter">
+
+  </footer>
+
+  <script>
+    let mainContent = document.getElementById("mainContent");
+    let bg = document.getElementById("bg");
+
+    document.querySelectorAll("[data-js-trigger]").forEach(
+      item => {
+        let target = item.dataset.jsTrigger;
+        item.addEventListener("click", function () {
+          mainContent.setAttribute("class", target + "Active");
+          bg.setAttribute("class","fade");
+         
+        }, false);
+      }
+    );
+
+    document.getElementById("mainHeader").addEventListener("click", function () {
+      mainContent.removeAttribute("class");
+      bg.removeAttribute("class");
+    }, false);
+    
+  </script>
+</body>
+
+</html>
