@@ -10,3 +10,21 @@ Enthält alle zusätzlichen Klassen und Erweiterungen
 .hidden {
   display: none !important;
 }
+
+
+
+.is-invers{
+  background-color: var(--color-text);
+  color: var(--color-backgrounds);
+}
+
+
+.is-red{
+  background-color: var(--color-red);
+  color: var(--color-text);
+}
+
+.is-red{
+  background-color: var(--color-red);
+  color: var(--color-text);
+}

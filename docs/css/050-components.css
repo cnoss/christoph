@@ -5,12 +5,12 @@ Enthält alle Regeln zu Komponenten.
 Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 ----------------------------------------------------------------------------*/
 
-.screen{
+
+/*.screen{
   width: 100vw;
   overflow: hidden;
-  
-}
-
+}*/
+/*
 #mainContent{
   display:flex;
   width: 200vw;
@@ -20,23 +20,26 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 #mainContent.gemaeldeActive{
   margin-left: calc(100vw * -1);
-}
+}*/
 
-#globalWrap{
-  width: 100vw;
+#global-wrap{
+  /*width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 
 /* mainHeader
 -----------------------------------------------------------------------------*/
-#mainHeader{
-  margin: var(--xl);
+.main-header{
+  top: var(--xl);
+  left: var(--xl);
+  position: fixed;
+  z-index: -1;
 }
 
-#mainHeader .title,
-#mainHeader .subtitle {
+.main-header__title,
+.main-header__subtitle {
   text-transform: uppercase;
   font-size: var(--fontsize-xl);
 }
@@ -45,11 +48,36 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 /* Startscreen
 -----------------------------------------------------------------------------*/
-#start {
+/*#start {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}*/
+
+#start {
+  height: 100vh;
+  padding: var(--xl);
+  position: fixed;
+  z-index: -1;
+  top: 10vh;
+}
+
+.main-navigation{
+  z-index: -1;
+}
+
+.main-navigation__list__item{
+  display: block;
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.1;
+  transition: 0.5s all;
+}
+
+.main-navigation__list__item:hover{
+  opacity: 0.9;
 }
 
 
@@ -86,27 +114,29 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 -----------------------------------------------------------------------------*/
 .masonry-wrapper {
   background-color: var(--color-backgrounds);
-  padding: var(--l);
-  height: 100vh;
+  padding: var(--xl);
+  z-index: 0;
 }
 .masonry {
   columns: 1;
-  column-gap: 10px;
+  column-gap: var(--xl);
 }
 .masonry-item {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 10px;
+  padding-bottom: var(--xxl);
 }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
+@media only screen and (min-width: 768px) {  .masonry {
     columns: 2;
   }
 }
 @media only screen and (min-width: 1024px) {
   .masonry {
-    columns: 3;
+    /*columns: 3; */
   }
 }
+
+/*
 .masonry-item {
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
   transition: filter .25s ease-in-out;
@@ -119,8 +149,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   opacity: .25;
   text-align: center;
   padding-top: 3em; 
-  padding-bottom: 3em;
-  margin-bottom: -1.5em;
+  
   transition: opacity 1s ease-in-out;
 }
 .masonry-footer a {
@@ -129,4 +158,91 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 .masonry-footer:hover, .masonry-footer:active, .masonry-footer:focus {
   opacity: .75;
 }
+*/
 
+.mansonry-item__image{
+  display: block;
+}
+
+
+
+/* typo
+-----------------------------------------------------------------------------*/
+
+.typo{
+  margin: auto;
+  max-width: var(--maxwidth-text);
+  padding: var(--xl);
+  padding-bottom: var(--xxxl);
+
+  font-size: var(--fontsize-xl);
+  hyphens: auto;
+
+  line-height: 140%;
+}
+
+.typo h2{
+  font-size: var(--fontsize-xl);
+  color: var(--color-backgrounds);
+}
+
+.typo li{
+  display: inline-block;
+  hyphens: auto;
+}
+
+.typo li:after{
+  content: ". ";
+  display: inline-block;
+}
+
+.typo.is-weird{
+  transform: rotate(0);
+  transition: all 0.5s 0.5s;
+}
+
+@media only screen and (min-width: 480px) {
+
+  .typo.is-weird{
+    transform: rotate(1deg);
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .typo h2{
+    font-size: var(--fontsize-l);
+  }
+
+  .typo {
+    font-size: var(--fontsize-xxl);
+    max-width: var(--maxwidth-text-l);
+  }
+
+}
+
+
+
+
+/* Items/ Drawings
+-----------------------------------------------------------------------------*/
+
+.item-info{
+  background-color:  var(--color-button-bg);
+  padding-bottom: var(--xl);
+}
+
+.item-info__title{
+  margin-block-start: var(--xs);
+  margin-bottom: var(--xs);
+}
+
+.item-info__list{
+  margin: 0;
+  padding: 0;
+}
+
+.item-info__list__data{
+  display: block;
+}
