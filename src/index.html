@@ -31,43 +31,139 @@ https://twitter.com/cnoss
   <div id="globalWrap">
     <div id="bg"></div>
 
-    <header id="mainHeader">
-      <h1 class="title">Christoph Steinke</h1>
-      <h2 class="subtitle">Künstler</h2>
+    <header class="main-header">
+      <h1 class="main-header__title">Christoph Steinke</h1>
+      <!--h2 class="main-header__subtitle">Künstler</h2-->
     </header>
 
-    <main id="mainContent">
+    <main id="main-content">
       <section id="start" class="screen">
-        <div class="choiceHolder">
+        <!--div class="choiceHolder">
           <button class="btn" data-js-trigger="gemaelde">Gemälde</button>
           <button class="btn" data-js-trigger="aktzeichnungen">Aktzeichnungen</button>
-        </div>
+        </div-->
+        <nav id="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__list__item"><a href="#gemaelde">Gemälde</a></li>
+            <li class="main-navigation__list__item"><a href="#statement">Artist Statement</a></li>
+            <li class="main-navigation__list__item"><a href="#aktzeichnungen">Aktzeichnungen</a></li>
+            <li class="main-navigation__list__item"><a href="#statement">Artist Biography</a></li>
+          </ul>
+        </nav>
       </section>
 
-      <section id="gemaelde" class="screen">
+      <section id="gemaelde" class="screen" style="margin-top: 100vh">
         <div class="masonry-wrapper">
           <div class="masonry">
             <figure class="masonry-item">
-              <img src="img/181118_face05_final_ergebnis.webp" alt="Dummy Image" class="masonry-content">
-              <figcaption>
-                Kleiner Text zum Bild
+              <!--picture>
+                    <source srcset="img/awesomeWebPImage.webp" type="image/webp">
+                    <source srcset="img/creakyOldJPEG.jpg" type="image/jpeg"> 
+                    <img src="img/creakyOldJPEG.jpg" alt="Alt Text!">
+                    
+                  </picture-->
+              <img src="img/181118_face05_final_ergebnis.webp" alt="Joy" class="mansonry-item__image">
+              <figcaption class="item-info">
+                <h3 class="item-info__title">Joy</h3>
+                <ul class="item-info__list">
+                  <li class="item-info__list__data">Acrylic on canvas</li>
+                  <li class="item-info__list__data">2018</li>
+                  <li class="item-info__list__data">150 x 50 cm</li>
+                </ul>
               </figcaption>
             </figure>
             <figure class="masonry-item">
-              <img src="img/190430_untitled_01_ergebnis.webp" alt="Dummy Image" class="masonry-content">
+              <img src="img/190430_untitled_01_ergebnis.webp" alt="Desire" class="mansonry-item__image">
+              <figcaption class="item-info">
+                <h3 class="item-info__title">Desire</h3>
+                <ul class="item-info__list">
+                  <li class="item-info__list__data">Acrylic on canvas</li>
+                  <li class="item-info__list__data">2018</li>
+                  <li class="item-info__list__data">80 x 130 cm</li>
+                </ul>
+
+
+              </figcaption>
             </figure>
             <figure class="masonry-item">
-              <img src="img/190606_obsession_master_ergebnis.webp" alt="Dummy Image" class="masonry-content">
+              <img src="img/190606_obsession_master_ergebnis.webp" alt="Obsession" class="mansonry-item__image">
+              <figcaption class="item-info">
+                <h3 class="item-info__title">Obsession</h3>
+                <ul class="item-info__list">
+                  <li class="item-info__list__data">Acrylic on canvas</li>
+                  <li class="item-info__list__data">2019</li>
+                  <li class="item-info__list__data">190 x 100 cm</li>
+                </ul>
+              </figcaption>
             </figure>
             <figure class="masonry-item">
-              <img src="img/190730_theartofspanking_master_ergebnis.webp" alt="Dummy Image" class="masonry-content">
+              <img src="img/190730_theartofspanking_master_ergebnis.webp" alt="The art of spanking"
+                class="mansonry-item__image">
+              <figcaption class="item-info">
+                <h3 class="item-info__title">The art of spanking</h3>
+                <ul class="item-info__list">
+                  <li class="item-info__list__data">Acrylic on canvas</li>
+                  <li class="item-info__list__data">2019</li>
+                  <li class="item-info__list__data">160 x 120 cm</li>
+                </ul>
+              </figcaption>
             </figure>
           </div>
         </div>
       </section>
+
+      <section id="statement" class="section is-red">
+        <div class="typo is-weird">
+          <h2># Artist Statement</h2>
+          <p>
+            In meinen Bildern beschäftige ich mich mit dem künstlerischen Ausdruck der menschlichen Sexualität. Dabei
+            können Gesichter, Körper, Partner oder Einzelpersonen im Mittelpunkt stehen. Der erotische Kontext ist
+            manchmal direkt zu erkennen, manchmal auch nicht.
+          </p>
+          <p>
+            Ich beziehe mich hauptsächlich auf Sequenzen aus pornografischen Filmen die aus der feminstischen „Good
+            Porn“ und „Sex-Positiv“ Bewegung entstanden sind. Ich suche nach emotionalen, menschlichen, intimen,
+            erotischen und auch provokanten Momenten.
+          </p>
+
+          <ul>
+            <li>Meine Kunst ist pornografisch</li>
+            <li>Meine Kunst ist feministisch</li>
+            <li>Meine Kunst ist Sex-positiv</li>
+            <li>Meine Kunst ist kinky</li>
+            <li>Meine Kunst ist politisch</li>
+            <li>Meine Kunst ist erotisch</li>
+            <li>Meine Kunst ist vielfältig</li>
+            <li>Meine Kunst ist menschlich</li>
+            <li>Meine Kunst ist provokant</li>
+            <li>Meine Kunst ist tolerant</li>
+            <li>Meine Kunst ist polarisierend</li>
+            <li>Meine Kunst ist intim</li>
+            <li>Meine Kunst ist persönlich</li>
+            <li>Meine Kunst ist frei</li>
+            <li>Meine Kunst ist falsch</li>
+            <li>Meine Kunst ist richtig</li>
+            <li>Meine Kunst ist das was ich sehe</li>
+            <li>Meine Kunst ist das was DU siehst</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="bio" class="section  is-invers">
+        <div class="typo">
+          <h2># Artist Biography</h2>
+          <p>Born in 1963 in the Black Forest, Germany, the son of an actor and a ballet dancer. Studied Art & Design at
+            the University of Applied Sciences in Pforzheim u.A. with Prof. Peter Jacobi and at the University of
+            Illinois at Chicago. Initially working as a graphic designer and art director at various agencies. In 1999
+            he took over the management of the graphic and corporate design department at ERCO, a leading international
+            specialist in architectural lighting. Since 2014 freelance artist. Chris lives and works at Düsseldorf,
+            Germany.</p>
+        </div>
+      </section>
+
     </main>
   </div>
-  <footer id="mainFooter">
+  <footer id="main-footer">
 
   </footer>
 
@@ -80,8 +176,8 @@ https://twitter.com/cnoss
         let target = item.dataset.jsTrigger;
         item.addEventListener("click", function () {
           mainContent.setAttribute("class", target + "Active");
-          bg.setAttribute("class","fade");
-         
+          bg.setAttribute("class", "fade");
+
         }, false);
       }
     );
@@ -90,7 +186,6 @@ https://twitter.com/cnoss
       mainContent.removeAttribute("class");
       bg.removeAttribute("class");
     }, false);
-    
   </script>
 </body>
 

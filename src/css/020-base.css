@@ -41,6 +41,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     Farben
     ----------------------------------------*/
     --color-text: #eee;
+    --color-red: red;
     --color-headlines: #999;
     --color-backgrounds: #000;
     --color-borders: rgba(0, 0, 0, 0.3);
@@ -49,13 +50,14 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
     /* Groessen
     ----------------------------------------*/
-    --xxs: 0.25rem;
-    --xs:  0.5rem;
-    --s:   0.75rem;
-    --m:   1.00rem;
-    --l:   1.25rem;
-    --xl:  1.50rem;
-    --xxl: 2.00rem;
+    --xxs:  0.25rem;
+    --xs:   0.5rem;
+    --s:    0.75rem;
+    --m:    1.00rem;
+    --l:    1.25rem;
+    --xl:   1.50rem;
+    --xxl:  2.00rem;
+    --xxxl: 3.00rem;
 
     /*
     Schrift
@@ -68,6 +70,8 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --fontsize-xxl: 2.50rem;
     --font-family: Barlow, Helvetica, Lucida, sans-serif;
 
+    --maxwidth-text: 960px;
+    --maxwidth-text-l:1200px;
 }
 
 
@@ -75,8 +79,18 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 
 
-/* Basic Styles 
+/* Basic Styles & Bahavior
 -----------------------------------------------------------------------------*/
+html{
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 
 body {
 
