@@ -126,26 +126,10 @@ https://twitter.com/cnoss
             erotischen und auch provokanten Momenten.
           </p>
 
-          <ul>
-            <li>Meine Kunst ist pornografisch</li>
-            <li>Meine Kunst ist feministisch</li>
-            <li>Meine Kunst ist Sex-positiv</li>
-            <li>Meine Kunst ist kinky</li>
-            <li>Meine Kunst ist politisch</li>
-            <li>Meine Kunst ist erotisch</li>
-            <li>Meine Kunst ist vielfältig</li>
-            <li>Meine Kunst ist menschlich</li>
-            <li>Meine Kunst ist provokant</li>
-            <li>Meine Kunst ist tolerant</li>
-            <li>Meine Kunst ist polarisierend</li>
-            <li>Meine Kunst ist intim</li>
-            <li>Meine Kunst ist persönlich</li>
-            <li>Meine Kunst ist frei</li>
-            <li>Meine Kunst ist falsch</li>
-            <li>Meine Kunst ist richtig</li>
-            <li>Meine Kunst ist das was ich sehe</li>
-            <li>Meine Kunst ist das was DU siehst</li>
-          </ul>
+          <p>
+            Meine Kunst ist <span id="myArtIs">…</span>.
+          </p>
+
         </div>
       </section>
 
@@ -171,7 +155,7 @@ https://twitter.com/cnoss
     let mainContent = document.getElementById("mainContent");
     let bg = document.getElementById("bg");
 
-    document.querySelectorAll("[data-js-trigger]").forEach(
+    /*document.querySelectorAll("[data-js-trigger]").forEach(
       item => {
         let target = item.dataset.jsTrigger;
         item.addEventListener("click", function () {
@@ -185,7 +169,42 @@ https://twitter.com/cnoss
     document.getElementById("mainHeader").addEventListener("click", function () {
       mainContent.removeAttribute("class");
       bg.removeAttribute("class");
-    }, false);
+    }, false);*/
+
+    let myArtIs = {};
+    myArtIs.data = ["pornografisch", "feministisch", "Sex-positiv", "kinky", "politisch", "erotisch", "vielfältig", "menschlich", "provokant", "tolerant", "polarisierend", "intim", "persönlich", "frei", "falsch", "richtig", "das was ich sehe","das was DU siehst"];
+    myArtIs.target = document.getElementById("myArtIs");
+    myArtIs.func = function(){
+      return {
+        init: function(demo){
+          myArtIs.timer = window.setInterval( this.changeArt , 5000);
+        },
+        changeArt: function(){
+          let l = myArtIs.data.length;
+          let rand;
+          let randRuns = Math.floor(Math.random() * 50);
+          let runs = 0;
+
+          myArtIs.iterate = window.setInterval( function(){
+            
+            do{
+              rand =  Math.floor(Math.random() * l);
+            } while (rand > l);
+            myArtIs.target.innerHTML = myArtIs.data[rand];
+            runs++;
+            if(runs > randRuns){
+              clearInterval(myArtIs.iterate);
+            }
+          } , 50);
+        
+        }
+      }
+    }
+    
+
+    let changeArt = myArtIs.func('Vivie');
+    changeArt.init("demo");
+
   </script>
 </body>
 

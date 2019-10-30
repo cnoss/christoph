@@ -12,7 +12,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   font-family:Barlow;
   font-style:normal;
   font-weight:200;
-  src:url('../fonts/Barlow/Barlow-Light.ttf');
+  src:url('https://buddy-12207.kxcdn.com/fonts/Barlow/Barlow-Light.ttf');
 }
 
 @font-face{
@@ -20,14 +20,14 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
   font-style:normal;
   font-weight:300;
-  src:url('../fonts/Barlow/Barlow-Regular.ttf');
+  src:url('https://buddy-12207.kxcdn.com/fonts/Barlow/Barlow-Regular.ttf');
 }
 
 @font-face{
   font-family:Barlow;
   font-style:normal;
   font-weight:600;
-  src:url('../fonts/Barlow/Barlow-SemiBold.ttf');
+  src:url('https://buddy-12207.kxcdn.com/fonts/Barlow/Barlow-SemiBold.ttf');
 }
 
 
@@ -170,7 +170,7 @@ http://google.github.io/material-design-icons/
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../img/190730_theartofspanking_master-bg.webp");
+  background-image: url("https://buddy-12207.kxcdn.com/img/190730_theartofspanking_master-bg.webp");
   background-size: cover;
   opacity: 1;
   transition: 0.8s opacity;

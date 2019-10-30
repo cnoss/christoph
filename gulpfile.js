@@ -9,6 +9,7 @@ const del = require('del');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const pipeline = require('readable-stream').pipeline;
+const cdnify = require('gulp-cdnify');
 /*
 const paths = {
   styles: {
@@ -25,7 +26,15 @@ const paths = {
   }
 }*/
 
-
+gulp.task('cdnify', function () {
+  return gulp.src([
+    'docs/**/*.{css,html,js,webp}'
+  ])
+    .pipe(cdnify({
+      base: 'https://buddy-12207.kxcdn.com/'
+    }))
+    .pipe(gulp.dest('docs/'))
+});
 
 gulp.task('minify-html', () => {
   return gulp.src('docs/*.html')
@@ -77,7 +86,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('clean', del.bind(null, ['tmp/', 'docs/']));
-gulp.task('build', gulp.series(['clean', 'copy-css-files','copy-html-files', 'minify-html', 'copy-font-files', 'copy-images' ]));
+gulp.task('build', gulp.series(['clean', 'copy-css-files','copy-html-files', 'minify-html', 'copy-font-files', 'copy-images', 'cdnify' ]));
 
 
 gulp.task('criticalcss', function (cb) {
