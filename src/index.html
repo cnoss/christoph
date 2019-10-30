@@ -56,13 +56,12 @@ https://twitter.com/cnoss
         <div class="masonry-wrapper">
           <div class="masonry">
             <figure class="masonry-item">
-              <!--picture>
-                    <source srcset="img/awesomeWebPImage.webp" type="image/webp">
-                    <source srcset="img/creakyOldJPEG.jpg" type="image/jpeg"> 
-                    <img src="img/creakyOldJPEG.jpg" alt="Alt Text!">
-                    
-                  </picture-->
-              <img src="img/181118_face05_final_ergebnis.webp" alt="Joy" class="mansonry-item__image">
+              <picture class="mansonry-item__image">
+                <source srcset="img/181118_face05_final_ergebnis.webp" type="image/webp">
+                <source srcset="img/181118_face05_final_ergebnis.webp?format=jpeg" type="image/jpeg">
+                <img src="img/181118_face05_final_ergebnis.webp?format=jpeg" alt="Joy">
+              </picture>
+
               <figcaption class="item-info">
                 <h3 class="item-info__title">Joy</h3>
                 <ul class="item-info__list">
@@ -81,8 +80,6 @@ https://twitter.com/cnoss
                   <li class="item-info__list__data">2018</li>
                   <li class="item-info__list__data">80 x 130 cm</li>
                 </ul>
-
-
               </figcaption>
             </figure>
             <figure class="masonry-item">
@@ -172,39 +169,41 @@ https://twitter.com/cnoss
     }, false);*/
 
     let myArtIs = {};
-    myArtIs.data = ["pornografisch", "feministisch", "Sex-positiv", "kinky", "politisch", "erotisch", "vielfältig", "menschlich", "provokant", "tolerant", "polarisierend", "intim", "persönlich", "frei", "falsch", "richtig", "das was ich sehe","das was DU siehst"];
+    myArtIs.data = ["pornografisch", "feministisch", "Sex-positiv", "kinky", "politisch", "erotisch", "vielfältig",
+      "menschlich", "provokant", "tolerant", "polarisierend", "intim", "persönlich", "frei", "falsch", "richtig",
+      "das was ich sehe", "das was DU siehst"
+    ];
     myArtIs.target = document.getElementById("myArtIs");
-    myArtIs.func = function(){
+    myArtIs.func = function () {
       return {
-        init: function(demo){
-          myArtIs.timer = window.setInterval( this.changeArt , 5000);
+        init: function (demo) {
+          myArtIs.timer = window.setInterval(this.changeArt, 5000);
         },
-        changeArt: function(){
+        changeArt: function () {
           let l = myArtIs.data.length;
           let rand;
           let randRuns = Math.floor(Math.random() * 50);
           let runs = 0;
 
-          myArtIs.iterate = window.setInterval( function(){
-            
-            do{
-              rand =  Math.floor(Math.random() * l);
+          myArtIs.iterate = window.setInterval(function () {
+
+            do {
+              rand = Math.floor(Math.random() * l);
             } while (rand > l);
             myArtIs.target.innerHTML = myArtIs.data[rand];
             runs++;
-            if(runs > randRuns){
+            if (runs > randRuns) {
               clearInterval(myArtIs.iterate);
             }
-          } , 50);
-        
+          }, 50);
+
         }
       }
     }
-    
+
 
     let changeArt = myArtIs.func('Vivie');
     changeArt.init("demo");
-
   </script>
 </body>
 
