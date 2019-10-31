@@ -9,7 +9,7 @@ const del = require('del');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const pipeline = require('readable-stream').pipeline;
-const cdnify = require('gulp-cdnify');
+const assetpaths = require('gulp-assetpaths');
 /*
 const paths = {
   styles: {
@@ -26,14 +26,18 @@ const paths = {
   }
 }*/
 
-gulp.task('cdnify', function () {
-  return gulp.src([
-    'docs/**/*.{css,html,js,webp}'
-  ])
-    .pipe(cdnify({
-      base: 'https://buddy-12207.kxcdn.com/'
-    }))
-    .pipe(gulp.dest('docs/'))
+
+gulp.task('change-paths', function(){
+  return gulp.src(['docs/*.html'])
+    .pipe(assetpaths({
+      newDomain: 'https://buddy-12207.kxcdn.com/',
+      oldDomain : '/',
+      docRoot : 'docs/',
+      filetypes : ['jpg','jpeg','png','ico','gif','js','css'],
+      customAttributes: ['srcset'],
+      templates: true
+     }))
+     .pipe(gulp.dest('docs/'));
 });
 
 gulp.task('minify-html', () => {
@@ -86,7 +90,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('clean', del.bind(null, ['tmp/', 'docs/']));
-gulp.task('build', gulp.series(['clean', 'copy-css-files','copy-html-files', 'minify-html', 'copy-font-files', 'copy-images', 'cdnify' ]));
+gulp.task('build', gulp.series(['clean', 'copy-css-files','copy-html-files', 'minify-html', 'copy-font-files', 'copy-images', 'change-paths' ]));
 
 
 gulp.task('criticalcss', function (cb) {
