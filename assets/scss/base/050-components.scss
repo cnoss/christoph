@@ -10,6 +10,8 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   width: 100vw;
   overflow: hidden;
 }*/
+
+
 /*
 #mainContent{
   display:flex;
@@ -22,7 +24,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   margin-left: calc(100vw * -1);
 }*/
 
-#global-wrap{
+#global-wrap {
   /*width: 100vw;
   height: 100vh;
   overflow: hidden; */
@@ -31,7 +33,8 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 /* mainHeader
 -----------------------------------------------------------------------------*/
-.main-header{
+
+.main-header {
   top: var(--xl);
   left: var(--xl);
   position: fixed;
@@ -45,9 +48,10 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 }
 
 
-
 /* Startscreen
 -----------------------------------------------------------------------------*/
+
+
 /*#start {
   height: 100vh;
   display: flex;
@@ -63,11 +67,11 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   top: 10vh;
 }
 
-.main-navigation{
+.main-navigation {
   z-index: -1;
 }
 
-.main-navigation__list__item{
+.main-navigation__list__item {
   display: block;
   font-size: 8vw;
   text-transform: uppercase;
@@ -76,7 +80,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   transition: 0.5s all;
 }
 
-.main-navigation__list__item:hover{
+.main-navigation__list__item:hover {
   opacity: 0.9;
 }
 
@@ -87,11 +91,12 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 .choiceHolder {
   width: 100%;
   max-width: 400px;
-  display:flex;
-  justify-content:space-around;
+  display: flex;
+  justify-content: space-around;
   flex-direction: column;
   padding: var(--l);
 }
+
 .choiceHolder .btn {
   color: white;
   background-color: var(--color-button-bg);
@@ -100,11 +105,14 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   margin: var(--xxs);
 }
 
-@media only screen and (min-width: 400px/*vp-xs*/) {
+@media only screen and (min-width: 400px
+/*vp-xs*/
+
+) {
   .choiceHolder {
     flex-direction: row;
   }
-	.choiceHolder .btn {
+  .choiceHolder .btn {
     width: 100%;
   }
 }
@@ -112,29 +120,36 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 /* masonry
 -----------------------------------------------------------------------------*/
+
 .masonry-wrapper {
   background-color: var(--color-backgrounds);
   padding: var(--xl);
   z-index: 0;
 }
+
 .masonry {
   columns: 1;
   column-gap: var(--xl);
 }
+
 .masonry-item {
   display: inline-block;
   vertical-align: top;
   padding-bottom: var(--xxl);
 }
-@media only screen and (min-width: 768px) {  .masonry {
+
+@media only screen and (min-width: 768px) {
+  .masonry {
     columns: 2;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   .masonry {
     /*columns: 3; */
   }
 }
+
 
 /*
 .masonry-item {
@@ -160,89 +175,79 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 }
 */
 
-.mansonry-item__image{
+.mansonry-item__image {
   display: block;
 }
-
 
 
 /* typo
 -----------------------------------------------------------------------------*/
 
-.typo{
+.typo {
   margin: auto;
   max-width: var(--maxwidth-text);
   padding: var(--xl);
   padding-bottom: var(--xxxl);
-
   font-size: var(--fontsize-xl);
   hyphens: auto;
-
   line-height: 140%;
 }
 
-.typo h2{
+.typo h2 {
   font-size: var(--fontsize-xl);
   color: var(--color-backgrounds);
 }
 
-.typo li{
+.typo li {
   display: inline-block;
   hyphens: auto;
 }
 
-.typo li:after{
+.typo li:after {
   content: ". ";
   display: inline-block;
 }
 
-.typo.is-weird{
+.typo.is-weired {
   transform: rotate(0);
   transition: all 0.5s 0.5s;
 }
 
 @media only screen and (min-width: 480px) {
-
-  .typo.is-weird{
+  .typo.is-weired {
     transform: rotate(1deg);
   }
-
 }
 
 @media only screen and (min-width: 1024px) {
-
-  .typo h2{
+  .typo h2 {
     font-size: var(--fontsize-l);
   }
-
   .typo {
     font-size: var(--fontsize-xxl);
     max-width: var(--maxwidth-text-l);
   }
-
 }
-
-
 
 
 /* Items/ Drawings
 -----------------------------------------------------------------------------*/
 
-.item-info{
-  background-color:  var(--color-button-bg);
+.item-info {
+  background-color: var(--color-button-bg);
   padding-bottom: var(--xl);
 }
 
-.item-info__title{
+.item-info__title {
   margin-block-start: var(--xs);
   margin-bottom: var(--xs);
 }
 
-.item-info__list{
+.item-info__list {
   margin: 0;
   padding: 0;
 }
 
-.item-info__list__data{
+.item-info__list__data {
   display: block;
 }

@@ -1,0 +1,22 @@
+<figure class="masonry-item">
+  <picture class="mansonry-item__image">
+  {{ $scratch := newScratch }}
+  {{ $images := .Resources.ByType "image" }}
+  {{ $teaser := index ($images) 0 }}            
+  {{ $thumb := $teaser.Resize "800x q90 Linear" }}
+  {{ $scratch.Set "teaser" $thumb.RelPermalink }}
+
+    <!--source srcset="/img/181118_face05_final_ergebnis.webp" type="image/webp">
+    <source srcset="/img/181118_face05_final_ergebnis.webp?format=jpeg" type="image/jpeg">
+    <img src="/img/181118_face05_final_ergebnis.webp?format=jpeg" alt="Joy"-->
+    <img src="{{ $thumb.RelPermalink }}"  alt="{{.Title}}">
+  </picture>
+  <figcaption class="item-info">
+    <h3 class="item-info__title">{{.Title}}</h3>
+    <ul class="item-info__list">
+      <li class="item-info__list__data">{{ .Params.technique }}</li>
+      <li class="item-info__list__data">{{ .Params.year }}</li>
+      <li class="item-info__list__data">{{ .Params.size }}</li>
+    </ul>
+  </figcaption>
+</figure>

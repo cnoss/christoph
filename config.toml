@@ -1,0 +1,34 @@
+baseurl = "https://www.medieninformatik.th-koeln.de/"
+
+languageCode = "de-de"
+sectionPagesMenu = "main"
+
+paginate = 5
+paginatePath = "page"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+[params]
+  baseFragment = "/"
+  template = ""
+  title = "Christoph Steinke // Künstler"
+  copyright = "Christoph Steinke"
+  ansprechpartner = "Ansprechpartner <a href=\"https://www.th-koeln.de/personen/christian.noss/\">Christian Noss</a>"
+  impressum = "<a href=\"https://www.th-koeln.de/hochschule/impressum_8159.php\">Impressum</a>"
+
+[taxonomies]
+  paper = "papers"
+
+[outputs]
+  page = ["HTML", "JSON"]
+  section = ["HTML", "JSON"]
+  home = ["html", "JSON"]
+
+[imaging]
+  resampleFilter = "box"
+  quality = 75
+  anchor = "smart"
