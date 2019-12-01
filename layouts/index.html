@@ -1,40 +1,25 @@
-{{ define "main" }} {{ $params := . }}
-{{ $scratch := newScratch }}
-<div id="globalWrap">
-  <div id="bg"></div>
+{{ define "main" }} {{ $params := . }} {{ $scratch := newScratch }}
 
-  <header class="main-header">
-    <h1 class="main-header__title">Christoph Steinke</h1>
-    <!--h2 class="main-header__subtitle">Künstler</h2-->
-  </header>
+<div id="bg"></div>
 
-  <main id="main-content">
-    <section id="start" class="screen">
-      <!--div class="choiceHolder">
-          <button class="btn" data-js-trigger="gemaelde">Gemälde</button>
-          <button class="btn" data-js-trigger="aktzeichnungen">Aktzeichnungen</button>
-        </div-->
-      <nav id="main-navigation">
-        <ul class="main-navigation__list">
-          {{ range $page :=  where .Pages.Reverse "Params.level" 1 }}
-          <li class="main-navigation__list__item"><a href="#{{.Params.id}}">{{.Title}}</a></li>
-          {{ end }}
-        </ul>
-      </nav>
-    </section>
+<header class="main-header">
+  <h1 class="main-header__title">Christoph Steinke</h1>
+  <h2 class="main-header__subtitle">Künstler</h2>
+</header>
 
-    {{ with $.Site.GetPage "/010-gemaelde" }}
-    {{ .Render "views/paintingsWrap"}}
-    {{end}}
+<main id="main-content">
+  <section id="start" class="screen">
+    <nav id="main-navigation">
+      <ul class="main-navigation__list">
+        {{ range $page := where .Pages.Reverse "Params.level" 1 }}
+        <li class="main-navigation__list__item"><a href="#{{.Params.id}}">{{.Title}}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </section>
 
-    {{ range $page := where .Pages.Reverse "Params.level" 1 }}
-    {{ .Render .Params.view }}
-    {{ end }}
+  {{ with $.Site.GetPage "/010-gemaelde" }} {{ .Render "views/paintingsWrap"}} {{end}} {{ range $page := where .Pages.Reverse "Params.level" 1 }} {{ .Render .Params.view }} {{ end }}
+  
+</main>
 
-
-  </main>
-</div>
-<footer id="main-footer">
-
-</footer>
 {{ end }}

@@ -47,6 +47,10 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   font-size: var(--fontsize-xl);
 }
 
+.main-header__subtitle {
+  margin-top: calc(var(--fontsize-l) * -1);
+}
+
 
 /* Startscreen
 -----------------------------------------------------------------------------*/
