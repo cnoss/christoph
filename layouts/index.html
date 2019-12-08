@@ -17,8 +17,13 @@
       </ul>
     </nav>
   </section>
-
-  {{ with $.Site.GetPage "/010-gemaelde" }} {{ .Render "views/paintingsWrap"}} {{end}} {{ range $page := where .Pages.Reverse "Params.level" 1 }} {{ .Render .Params.view }} {{ end }}
+  
+  {{ with $.Site.GetPage "/010-gemaelde" }}
+  {{ .Render "views/paintingsWrap"}}
+  {{end}}
+  {{ range $page := where .Pages.Reverse "Params.level" 1 }}
+  {{ .Render .Params.view }}
+  {{ end }}
   
 </main>
 
