@@ -1,4 +1,5 @@
 ---
 title: "uploads"
+headless: true
 ---
 
