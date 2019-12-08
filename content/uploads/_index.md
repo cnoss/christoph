@@ -1,5 +1,4 @@
 ---
-title: "Gemälde"
-view: "views/paintingsWrap"
+title: "uploads"
 ---
-Haben Sie Interesse oder Fragen zum Studiengang Medieninformatik Bachelor, dann wenden Sie sich bitte an 
+

@@ -5,6 +5,8 @@ id: "statement"
 cssClassesWrap: "section is-red"
 cssClassesContent: "typo is-weired"
 level: 1
+type: "page"
+nav: true
 ---
 
 In my pictures I deal with the artistic expression of human sexuality. It can focus on faces, bodies, partners or individuals. The erotic context is sometimes directly recognizable, sometimes not.

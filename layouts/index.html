@@ -11,7 +11,7 @@
   <section id="start" class="screen">
     <nav id="main-navigation">
       <ul class="main-navigation__list">
-        {{ range $page := where .Pages.Reverse "Params.level" 1 }}
+        {{ range $page := where .Pages.Reverse "Params.nav" true }}
         <li class="main-navigation__list__item"><a href="#{{.Params.id}}">{{.Title}}</a></li>
         {{ end }}
       </ul>
@@ -21,7 +21,7 @@
   {{ with $.Site.GetPage "/010-gemaelde" }}
   {{ .Render "views/paintingsWrap"}}
   {{end}}
-  {{ range $page := where .Pages.Reverse "Params.level" 1 }}
+  {{ range $page := where .Pages.Reverse "Params.type" "page" }}
   {{ .Render .Params.view }}
   {{ end }}
   
