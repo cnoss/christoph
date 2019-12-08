@@ -13,8 +13,7 @@ media_folder_relative: true
 collections:
   - name: "gemaelde" # Used in routes, e.g., /admin/collections/blog
     label: "Gemälde" # Used in the UI
-    folder: "content/010-gemaelde/{{slug}}" # The path to the folder where the documents are stored
-    path: "{{slug}}"
+    folder: "content/010-gemaelde" # The path to the folder where the documents are stored
     preview_path: "010-gemaelde/"
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}'
