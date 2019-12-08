@@ -45,10 +45,9 @@ collections:
         step: 1
       - label: 'Technik des Artefakts'
         name: 'technique'
-        widget: 'String'
+        widget: 'string'
       - label: 'Erstellungsjahr Artefakt'
         name: 'year'
-        widget: 'date'
+        widget: "number"
         default: '2019'
-        format: 'YYYY'
       - {label: "Featured Image", name: "teaser", widget: "image"}
