@@ -52,4 +52,4 @@ collections:
         name: 'year'
         widget: "number"
         default: '2019'
-      - {label: "Featured Image", name: "teaser", widget: "image"}
+      - {label: "Artefakt", name: "teaser", widget: "image"}
