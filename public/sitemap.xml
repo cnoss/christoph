@@ -4,23 +4,18 @@
   
   <url>
     <loc>https://christophsteinke.com/</loc>
-    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+    <lastmod>2019-12-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://christophsteinke.com/010-gemaelde/desire/</loc>
-    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://christophsteinke.com/010-gemaelde/</loc>
-    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+    <lastmod>2019-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://christophsteinke.com/010-gemaelde/joy/</loc>
-    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+    <loc>https://christophsteinke.com/010-gemaelde/items/joy/</loc>
+    <lastmod>2019-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -29,6 +24,10 @@
   
   <url>
     <loc>https://christophsteinke.com/030-statement/</loc>
+  </url>
+  
+  <url>
+    <loc>https://christophsteinke.com/uploads/</loc>
   </url>
   
   <url>
