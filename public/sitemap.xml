@@ -3,17 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://christophsteinke.com/</loc>
+    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
-    <priority>0</priority>
+    <loc>https://christophsteinke.com/010-gemaelde/desire/</loc>
+    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://christophsteinke.com/010-gemaelde/</loc>
+    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://christophsteinke.com/010-gemaelde/joy/</loc>
+    <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://christophsteinke.com/040-bio/</loc>
+  </url>
+  
+  <url>
+    <loc>https://christophsteinke.com/030-statement/</loc>
+  </url>
+  
+  <url>
+    <loc>https://christophsteinke.com/papers/</loc>
     <priority>0</priority>
   </url>
   
