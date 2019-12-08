@@ -3,6 +3,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
+site_url: https://christophsteinke.com/
 
 # These lines should *not* be indented
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
@@ -14,6 +15,7 @@ collections:
     label: "Gemälde" # Used in the UI
     folder: "content/010-gemaelde/{{slug}}" # The path to the folder where the documents are stored
     path: "{{slug}}"
+    preview_path: "010-gemaelde/"
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}'
     fields: # The fields for each document, usually in front matter
