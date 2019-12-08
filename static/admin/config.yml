@@ -21,8 +21,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - label: "Template"
         name: "template"
-        widget: "select"
-        options: ["views/painting"]
+        widget: "hidden"
+        default: "views/painting"
       - label: 'Datum für diesen Eintrag'
         name: 'date'
         widget: 'date'
