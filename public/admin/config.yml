@@ -7,16 +7,48 @@ publish_mode: editorial_workflow
 # These lines should *not* be indented
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
-
+media_folder_relative: true
 
 collections:
   - name: "gemaelde" # Used in routes, e.g., /admin/collections/blog
     label: "Gemälde" # Used in the UI
-    folder: "content/010-gemaelde/assets" # The path to the folder where the documents are stored
+    folder: "content/010-gemaelde/{{slug}}" # The path to the folder where the documents are stored
     path: "{{slug}}"
     create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle2", name: "subtitle", widget: "string"}
-      - {label: "Demo", name: "demo", widget: "string", required: "false"}
+      - label: "Template"
+          name: "template"
+          widget: "select"
+          options: ["views/painting"]
+      - label: 'Datum für diesen Eintrag'
+          name: 'date'
+          widget: 'date'
+          default: ''
+          format: 'YYYY-MM-DD'
+      - label: 'Breite des Artefakts in Zentimetern'
+          name: "width"
+          widget: "number"
+          default: 100
+          valueType: "int"
+          min: 60
+          max: 300
+          step: 1
+      - label: 'Höhe des Artefakts in Zentimetern'
+          name: "height"
+          widget: "number"
+          default: 100
+          valueType: "int"
+          min: 40
+          max: 300
+          step: 1
+      - label: 'Technik des Artefakts'
+          name: 'technique'
+          widget: 'String'
+      - label: 'Erstellungsjahr Artefakt'
+          name: 'year'
+          widget: 'date'
+          default: '2019'
+          format: 'YYYY'
+      - {label: "Featured Image", name: "teaser", widget: "image"}
