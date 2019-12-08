@@ -19,10 +19,7 @@ collections:
     slug: '{{slug}}'
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - label: "Template"
-        name: "template"
-        widget: "hidden"
-        default: "views/painting"
+      - {label: "View", name: "view", widget: "hidden", default: "views/painting"}
       - label: 'Datum für diesen Eintrag'
         name: 'date'
         widget: 'date'
