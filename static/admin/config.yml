@@ -41,8 +41,11 @@ collections:
         min: 40
         max: 300
         step: 1
-      - label: 'Technik des Artefakts'
-        name: 'technique'
+        - label: 'Technik des Artefakts (deutsch)'
+        name: 'technique-de'
+        widget: 'string'
+        - label: 'Technik des Artefakts (englisch)'
+        name: 'technique-en'
         widget: 'string'
       - label: 'Erstellungsjahr Artefakt'
         name: 'year'

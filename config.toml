@@ -32,3 +32,13 @@ googleAnalytics = ""
   resampleFilter = "box"
   quality = 75
   anchor = "smart"
+
+[languages]
+  [languages.de]
+    languageName = "deutsch"
+    weight = 1
+    subtitle = "Künstler"
+  [languages.en]
+    languageName = "english"
+    weight = 2
+    subtitle = "Artist"
