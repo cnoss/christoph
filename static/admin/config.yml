@@ -31,7 +31,7 @@ collections:
           - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-red"}
           - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "typo is-weired"}
           - {label: "level", name: "level", widget: "hidden", default: 1}
-          - {label: "type", name: "type", widget: "hidden", default: "page}
+          - {label: "type", name: "type", widget: "hidden", default: "page"}
           - {label: "nav", name: "nav", widget: "hidden", default: true}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Permalink", name: "permalink", widget: "string"}
