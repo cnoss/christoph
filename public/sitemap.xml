@@ -1,38 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://christophsteinke.com/</loc>
-    <lastmod>2019-12-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://christophsteinke.com/010-gemaelde/</loc>
-    <lastmod>2019-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christophsteinke.com/010-gemaelde/items/joy/</loc>
-    <lastmod>2019-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://christophsteinke.com/040-bio/</loc>
-  </url>
-  
-  <url>
-    <loc>https://christophsteinke.com/030-statement/</loc>
-  </url>
-  
-  <url>
-    <loc>https://christophsteinke.com/uploads/</loc>
-  </url>
-  
-  <url>
-    <loc>https://christophsteinke.com/papers/</loc>
-    <priority>0</priority>
-  </url>
-  
-</urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://christophsteinke.com/de/sitemap.xml</loc>
+		
+	   	<lastmod>2019-12-07T00:00:00+00:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://christophsteinke.com/en/sitemap.xml</loc>
+		
+	</sitemap>
+	
+</sitemapindex>

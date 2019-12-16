@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://christophsteinke.com/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://christophsteinke.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://christophsteinke.com/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://christophsteinke.com/en/030-statement/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://christophsteinke.com/030-statement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://christophsteinke.com/en/030-statement/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://christophsteinke.com/en/papers/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://christophsteinke.com/papers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://christophsteinke.com/en/papers/"
+                />
+  </url>
+  
+</urlset>
