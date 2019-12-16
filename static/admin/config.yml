@@ -69,7 +69,7 @@ collections:
       - label: 'Technik des Artefakts (deutsch)'
         name: 'technique-de'
         widget: 'string'
-        - label: 'Technik des Artefakts (englisch)'
+      - label: 'Technik des Artefakts (englisch)'
         name: 'technique-en'
         widget: 'string'
       - label: 'Erstellungsjahr Artefakt'
