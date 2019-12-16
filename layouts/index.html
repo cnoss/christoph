@@ -11,7 +11,8 @@
   <section id="start" class="screen">
     <nav id="main-navigation">
       <ul class="main-navigation__list">
-        {{ range $page := where .Pages.Reverse "Params.nav" true }}
+        {{ $pages := where .Pages "Params.nav" true}}
+        {{ range sort $pages "File.Path" }}
         <li class="main-navigation__list__item"><a href="#{{.Params.id}}">{{.Title}}</a></li>
         {{ end }}
       </ul>
@@ -21,10 +22,12 @@
   {{ with $.Site.GetPage "/010-gemaelde" }}
   {{ .Render "views/paintingsWrap"}}
   {{end}}
-  {{ range $page := where .Pages.Reverse "Params.type" "page" }}
+  {{ $pages := where .Pages "Params.type" "page" }}
+  {{ range sort $pages "File.Path" }}
   {{ .Render .Params.view }}
   {{ end }}
   
 </main>
+
 
 {{ end }}

@@ -1,0 +1,19 @@
+<section {{ with .Params.id }}id="{{ . }}" {{ end }} {{ with .Params.cssClassesWrap }}class="{{.}}" {{ end }}>
+  <div {{ with .Params.cssClassesContent }}class="{{.}}" {{ end }}>
+    <address>
+      <ul class="contactData">
+      <li title="name">{{.Params.Name}}</li>
+      <li title="street">{{.Params.Street}}</li>
+      <li title="citty">{{.Params.Plz}} {{.Params.City}}</li>
+      <li title="country">{{.Params.Country}}</li>
+      </ul>
+
+      <ul class="contactData">
+      <li title="fon">{{.Params.Fon}}</li>
+      <li title="email"><a href="{{.Params.Email}}" onclick="this.href='mailto:{{.Params.Email}}'">{{.Params.Email}}</a></li>
+      
+      </ul>
+    </address>
+
+  </div>
+</section>

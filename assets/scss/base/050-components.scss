@@ -212,6 +212,15 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   display: inline-block;
 }
 
+.typo.contact li {
+  display: block;
+  hyphens: auto;
+}
+
+.typo.contact li:after {
+  content: "";
+}
+
 .typo.is-weired {
   transform: rotate(0);
   transition: all 0.5s 0.5s;

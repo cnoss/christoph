@@ -1,6 +1,7 @@
 baseurl = "https://christophsteinke.com/"
 
 languageCode = "de-de"
+defaultContentLanguage = "de"
 sectionPagesMenu = "main"
 
 paginate = 5
@@ -15,10 +16,9 @@ googleAnalytics = ""
 [params]
   baseFragment = "/"
   template = ""
-  title = "Christoph Steinke // Künstler"
+  title = "Christoph Steinke"
   copyright = "Christoph Steinke"
-  ansprechpartner = "Ansprechpartner <a href=\"https://www.th-koeln.de/personen/christian.noss/\">Christian Noss</a>"
-  impressum = "<a href=\"https://www.th-koeln.de/hochschule/impressum_8159.php\">Impressum</a>"
+  subtitle = "Künstler"
 
 [taxonomies]
   paper = "papers"
@@ -37,7 +37,7 @@ googleAnalytics = ""
   [languages.de]
     languageName = "deutsch"
     weight = 1
-    subtitle = "Künstler"
+    
   [languages.en]
     languageName = "english"
     weight = 2
