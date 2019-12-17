@@ -9,15 +9,6 @@ site_url: https://christophsteinke.com/
 media_folder: "content/uploads"
 public_folder: "/uploads"
 
-
-view: "views/simpleText"
-id: "statement"
-cssClassesWrap: "section is-red"
-cssClassesContent: "typo is-weired"
-level: 1
-type: "page"
-nav: true
-
 collections:
   - name: "pages"
     label: "Seiten"
@@ -67,6 +58,24 @@ collections:
           - {label: "type", name: "type", widget: "hidden", default: "page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+
+      - name: "contact"
+        label: "Kontakt (de & en)"
+        file: "content/050-contact/index.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/contact"}
+          - {label: "id", name: "id", widget: "hidden", default: "contact"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-black"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "typo contact"}
+          - {label: "type", name: "type", widget: "hidden", default: "footer"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Straße", name: "street", widget: "string"}
+          - {label: "PLZ", name: "plz", widget: "string"}
+          - {label: "Stadt", name: "city", widget: "string"}
+          - {label: "Land", name: "country", widget: "string"}
+          - {label: "Fon", name: "fon", widget: "string"}
+          - {label: "E-Mail", name: "email", widget: "string"}
+
   - name: "gemaelde" # Used in routes, e.g., /admin/collections/blog
     label: "Gemälde" # Used in the UI
     folder: "content/010-gemaelde/items" # The path to the folder where the documents are stored
