@@ -45,23 +45,40 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 .main-header__subtitle {
   text-transform: uppercase;
   font-size: var(--fontsize-xl);
+  margin-top: 0;
 }
 
 .main-header__subtitle {
   margin-top: calc(var(--fontsize-l) * -1);
 }
 
+#lang-navigation{
+  top: var(--xl);
+  right: var(--xl);
+  position: fixed;
+  z-index: -1;
+  font-size: var(--fontsize-xl);
+}
+
+#lang-navigation .lang-navigation__list .lang-navigation__list__item{
+  display: inline-block;
+}
+
+#lang-navigation .lang-navigation__list .lang-navigation__list__item a{
+  color: var(--color-headlines);
+}
+
+#lang-navigation .lang-navigation__list .lang-navigation__list__item + .lang-navigation__list__item{
+  border-left: solid 1px #fff;
+  margin-left: var(--xs);
+  padding-left: var(--xs);
+}
+
+
+
 
 /* Startscreen
 -----------------------------------------------------------------------------*/
-
-
-/*#start {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
 
 #start {
   height: 100vh;
@@ -89,39 +106,6 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 }
 
 
-/* choiceHolder
------------------------------------------------------------------------------*/
-
-.choiceHolder {
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: var(--l);
-}
-
-.choiceHolder .btn {
-  color: white;
-  background-color: var(--color-button-bg);
-  border: none;
-  padding: 20px;
-  margin: var(--xxs);
-}
-
-@media only screen and (min-width: 400px
-/*vp-xs*/
-
-) {
-  .choiceHolder {
-    flex-direction: row;
-  }
-  .choiceHolder .btn {
-    width: 100%;
-  }
-}
-
-
 /* masonry
 -----------------------------------------------------------------------------*/
 
@@ -129,6 +113,10 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   background-color: var(--color-backgrounds);
   padding: var(--xl);
   z-index: 0;
+}
+
+#drawings .masonry-wrapper {
+  background-color: var(--color-headlines);
 }
 
 .masonry {
@@ -247,13 +235,16 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 -----------------------------------------------------------------------------*/
 
 .item-info {
-  background-color: var(--color-button-bg);
   padding-bottom: var(--xl);
 }
 
 .item-info__title {
   margin-block-start: var(--xs);
   margin-bottom: var(--xs);
+}
+
+#drawings .item-info__title {
+  color: var(--color-backgrounds);
 }
 
 .item-info__list {

@@ -4,9 +4,7 @@ view: "views/contact"
 id: "contact"
 cssClassesWrap: "section is-black"
 cssClassesContent: "typo contact "
-level: 1
-type: "page"
-nav: true
+type: "footer"
 name: "Christoph Steinke"
 street: "Musterstraße 22"
 plz: 54433

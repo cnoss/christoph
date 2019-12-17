@@ -4,9 +4,8 @@ view: "views/simpleText"
 id: "statement"
 cssClassesWrap: "section is-red"
 cssClassesContent: "typo is-weired"
-level: 1
 type: "page"
-nav: true
+
 ---
 
 In meinen Bildern beschäftige ich mich mit dem künstlerischen Ausdruck der menschlichen Sexualität. Dabei können Gesichter, Körper, Partner oder Einzelpersonen im Mittelpunkt stehen. Der erotische Kontext ist manchmal direkt zu erkennen, manchmal auch nicht.
