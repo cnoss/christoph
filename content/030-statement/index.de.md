@@ -6,9 +6,7 @@ cssClassesContent: typo is-weired
 type: page
 title: Künstler Statement
 ---
-# Painting the New Porn 
-
-# Pop Culture
+# Painting the New Porn Pop Culture
 
 Ich mache Kunst für Erwachsene. In meinen Bildern geht es um pornografische Darstellungen. Ich möchte die Kraft, die Vielfalt, die Lust und die Freude der menschlichen Sexualität offen, tabulos und in all Ihren Facetten und Spielarten zeigen.
 
