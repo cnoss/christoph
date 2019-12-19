@@ -1,30 +1,15 @@
 ---
+view: views/simpleText
+id: statement
+cssClassesWrap: section is-red
+cssClassesContent: typo is-weired
+type: page
 title: Artist Statement
-view: "views/simpleText"
-id: "statement"
-cssClassesWrap: "section is-red"
-cssClassesContent: "typo is-weired"
-type: "page"
 ---
+# Painting the New Porn  Pop Culture 
 
-In my pictures I deal with the artistic expression of human sexuality. It can focus on faces, bodies, partners or individuals. The erotic context is sometimes directly recognizable, sometimes not.
+I do art for adults. My pictures are about pornographic images. I want to show the power, the diversity, the pleasure and the joy of human sexuality openly, without taboos and in all its facets and varieties. Let‘s talk about sex!
 
-I mainly refer to sequences from pornographic films that have emerged from the feminist "good porn" and "sex-positive" movement. I'm looking for emotional, human, intimate, erotic and also provocative moments.
+In my pictures I show explicit scenes of contemporary, alternative and feminist pornography. The focus is on the portraits of those involved. I want to give a positive and free look at the portrayal of erotic sexuality. Sex is positive!
 
-- My art is pornographic
-- My art is feminist
-- My art is sex-positive
-- My art is kinky
-- My art is political
-- My art is erotic
-- My art is diverse
-- My art is human
-- My art is provocative
-- My art is tolerant
-- My art is polarizing
-- My art is intimate
-- My art is personal
-- My art is wrong
-- My art is right
-- My art is what I see
-- My art is what YOU see
+It is time to redefine the cultural relevance of pornography. As part of the new pornographic pop culture, I want to convey a different view of pornography. I would like to contribute that we can talk openly and freely about sexuality and think again. That we again understand sexuality as something deeply human and part of us. I would like to help rid the subject of sex of the ballast of power, ownership claims, taboos, prohibitions and ideologies. In order to be perfect as human beings, we must not separate, deny or suppress our sexual identity. Let‘s play with each other. Sex is a playground for adults.
