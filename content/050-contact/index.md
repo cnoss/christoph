@@ -5,11 +5,11 @@ cssClassesWrap: section is-black
 cssClassesContent: 'typo contact '
 type: footer
 name: Christoph Steinke
-street: Musterstraße 22
-plz: 54433
+street: Bechemer Strasse 62
+plz: '40878'
 city: Ratingen
 country: Deutschland
-fon: +49 151 77 88 672 1
-email: artist@christophsteinke.com
+fon: +49 1717678780
+email: mail@christophsteinke.com
 ---
 
