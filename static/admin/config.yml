@@ -117,6 +117,8 @@ collections:
         widget: "number"
         default: '2019'
       - {label: "Artefakt", name: "teaser", widget: "image"}
+      - {label: "Detail 1", name: "detail-1", widget: "image"}
+      - {label: "Detail 2", name: "detail-2", widget: "image"}
       
   - name: "drawings" # Used in routes, e.g., /admin/collections/blog
     label: "Zeichnungen" # Used in the UI
