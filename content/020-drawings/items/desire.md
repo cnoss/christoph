@@ -1,12 +1,12 @@
 ---
-title: Desire
+title: 'Drawing '
 view: views/painting
 date: 06.12.2019
-width: 100
-height: 100
-technique_de: Acryl auf Leinwand
-technique_en: Acryl auf Leinwand
+width: 60
+height: 42
+technique_de: 'Pastell und Bleistift auf Papier '
+technique_en: Pastell and pencil on paper
 year: '2019'
-teaser: /uploads/181118_face05_final.jpg
+teaser: /uploads/img_8692.jpg
 ---
 
