@@ -10,6 +10,6 @@ plz: '40878'
 city: Ratingen
 country: Deutschland
 fon: +49 1717678780
-email: mail@christophsteinke.com
+email: christophsteinke@me.com
 ---
 
