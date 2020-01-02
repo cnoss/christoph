@@ -37,6 +37,8 @@ googleAnalytics = ""
   [languages.de]
     languageName = "deutsch"
     weight = 1
+    [languages.de.params]
+      subtitle   = "aKünstler"
   [[languages.de.menu.main]]
     identifier = "gemaelde"
     name   = "Gemälde"
@@ -61,6 +63,8 @@ googleAnalytics = ""
   [languages.en]
     languageName = "english"
     weight = 2
+    [languages.en.params]
+      subtitle = "Artist"
   [[languages.en.menu.main]]
     identifier = "gemaelde"
     name   = "Paintings"
@@ -81,3 +85,4 @@ googleAnalytics = ""
     identifier = "contact"
     name   = "Contact"
     weight = 10
+
