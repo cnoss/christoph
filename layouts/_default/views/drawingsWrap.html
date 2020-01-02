@@ -1,9 +1,0 @@
-<section id="drawings" class="screen">
-  <div class="masonry-wrapper">
-    <div class="masonry">
-    {{ range $page := .Pages.Reverse }}
-    {{ .Render .Params.view }}
-    {{ end }}
-    </div>
-  </div>
-</section>

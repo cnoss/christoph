@@ -52,7 +52,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   margin-top: calc(var(--fontsize-l) * -1);
 }
 
-#lang-navigation{
+#lang-navigation {
   top: var(--xl);
   right: var(--xl);
   position: fixed;
@@ -60,21 +60,19 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   font-size: var(--fontsize-xl);
 }
 
-#lang-navigation .lang-navigation__list .lang-navigation__list__item{
+#lang-navigation .lang-navigation__list .lang-navigation__list__item {
   display: inline-block;
 }
 
-#lang-navigation .lang-navigation__list .lang-navigation__list__item a{
+#lang-navigation .lang-navigation__list .lang-navigation__list__item a {
   color: var(--color-headlines);
 }
 
-#lang-navigation .lang-navigation__list .lang-navigation__list__item + .lang-navigation__list__item{
+#lang-navigation .lang-navigation__list .lang-navigation__list__item+.lang-navigation__list__item {
   border-left: solid 1px #fff;
   margin-left: var(--xs);
   padding-left: var(--xs);
 }
-
-
 
 
 /* Startscreen
@@ -94,7 +92,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 
 .main-navigation__list__item {
   display: block;
-  font-size: 8vw;
+  font-size: 7vw;
   text-transform: uppercase;
   font-weight: 600;
   opacity: 0.1;
@@ -230,6 +228,30 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
   }
 }
 
+
+/* Exhibitions
+-----------------------------------------------------------------------------*/
+
+.exhibitions{
+  @extend .typo;
+
+  h2, h3{
+    color: var(--color-text);
+  }
+  
+  h3{
+    font-size: var(--fontsize-xl);
+  }
+
+  & li:after {
+    content: ""
+  }
+
+  & ul{
+    margin-bottom: var(--xxxl);
+  }
+
+}
 
 /* Items/ Drawings
 -----------------------------------------------------------------------------*/

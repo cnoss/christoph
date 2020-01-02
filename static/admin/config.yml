@@ -60,10 +60,32 @@ collections:
           - {label: "type", name: "type", widget: "hidden", default: "page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - name: "exhibitions-en"
+        label: "Exhibitions (en)"
+        file: "content/050-exhibitions/index.en.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/exhibitions"}
+          - {label: "id", name: "id", widget: "hidden", default: "exhibitions"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-really-black"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "exhibistions"}
+          - {label: "type", name: "type", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - name: "exhibitions-de"
+        label: "Ausstellungen (de)"
+        file: "content/050-exhibitions/index.de.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/exhibitions"}
+          - {label: "id", name: "id", widget: "hidden", default: "exhibitions"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-really-black"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "exhibistions"}
+          - {label: "type", name: "type", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
 
       - name: "contact"
         label: "Kontakt (de & en)"
-        file: "content/050-contact/index.md"
+        file: "content/060-contact/index.md"
         fields:
           - {label: "view", name: "view", widget: "hidden", default: "views/contact"}
           - {label: "id", name: "id", widget: "hidden", default: "contact"}

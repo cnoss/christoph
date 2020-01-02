@@ -37,26 +37,35 @@
   {{ range where .Sites ".Language.Lang" "de" }}
 	{{ $deSite = . }}
   {{ end }}
-
   {{ with $deSite }}
-  {{ with $deSite.Site.GetPage "/010-gemaelde" }}
-  {{ .Render "views/paintingsWrap"}}
+  
+  {{ with .Site.GetPage "/uploads" }}
+  {{ $scratch.Set "uploads" .Resources }}
+  {{ end }}
+ 
+  {{ with $deSite.Site.GetPage "/010-gemaelde" }} 
+  {{ $lang := $scratch.Get "lang" }}
+  {{ $uploads := $scratch.Get "uploads" }}
+  {{ partial "views/paintingsWrap.html" (dict "params" . "langkey" $lang "uploads" $uploads) }}
   {{end}}
 
   {{ with $deSite.Site.GetPage "/020-drawings" }}
-  {{ .Render "views/drawingsWrap"}}
+    {{ $lang := $scratch.Get "lang" }}
+  {{ $uploads := $scratch.Get "uploads" }}
+  {{ partial "views/drawingsWrap.html" (dict "params" . "langkey" $lang "uploads" $uploads) }}
   {{end}}
-
   {{end}}
 
   {{ $pages := where .Pages "Params.type" "page" }}
   {{ range sort $pages "File.Path" }}
-  {{ .Render .Params.view }}
+  {{ partial (printf "%s.html" .Params.view) . }}
   {{ end }}
 
+
+
   {{ with $deSite }}
-  {{ with $deSite.Site.GetPage "/050-contact" }}
-  {{ .Render .Params.view }}
+  {{ with $deSite.Site.GetPage "/060-contact" }}
+  {{ partial (printf "%s.html" .Params.view) . }}
   {{end}}
   {{end}}
   

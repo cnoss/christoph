@@ -1,9 +1,0 @@
-<section id="gemaelde" class="screen" style="margin-top: 100vh">
-  <div class="masonry-wrapper">
-    <div class="masonry">
-    {{ range $page := .Pages.Reverse }}
-    {{ .Render .Params.view }}
-    {{ end }}
-    </div>
-  </div>
-</section>

@@ -38,7 +38,7 @@ googleAnalytics = ""
     languageName = "deutsch"
     weight = 1
     [languages.de.params]
-      subtitle   = "aKünstler"
+      subtitle   = "Künstler"
   [[languages.de.menu.main]]
     identifier = "gemaelde"
     name   = "Gemälde"
@@ -56,9 +56,13 @@ googleAnalytics = ""
     name   = "Statement"
     weight = 8
   [[languages.de.menu.main]]
+    identifier = "exhibitions"
+    name   = "Ausstellungen"
+    weight = 10
+  [[languages.de.menu.main]]
     identifier = "contact"
     name   = "Kontakt"
-    weight = 10
+    weight = 12
 
   [languages.en]
     languageName = "english"
@@ -82,7 +86,11 @@ googleAnalytics = ""
     name   = "Statement"
     weight = 8
   [[languages.en.menu.main]]
+    identifier = "exhibitions"
+    name   = "Exhibitions"
+    weight = 10
+  [[languages.en.menu.main]]
     identifier = "contact"
     name   = "Contact"
-    weight = 10
+    weight = 12
 
