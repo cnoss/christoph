@@ -8,6 +8,7 @@ title: Ausstellungen
 ---
 
 - 2018 Gruppenausstellung „Kunst im Markt“ in Rheinfelden, bei Basel
+
 - 2019 ARTLAB MUNICH präsentiert von der Galerie Benjamin Eck, München
 
 ### Anstehend
