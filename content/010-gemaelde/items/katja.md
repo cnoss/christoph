@@ -1,5 +1,5 @@
 ---
-title: Katja
+title: "Sensual Portrait: Katja"
 view: views/painting
 date: 30.08.2020
 width: 160
