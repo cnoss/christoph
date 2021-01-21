@@ -1,5 +1,5 @@
 ---
-title: Stefanie
+title: "Sensual Portrait: Stefanie"
 view: views/painting
 date: 21.01.2021
 width: 180
