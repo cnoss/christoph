@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------
+addons.css                                                                  
+Enthält alle zusätzlichen Klassen und Erweiterungen
+----------------------------------------------------------------------------*/
+
+
+/* helper 
+-----------------------------------------------------------------------------*/
+
+.hidden {
+  display: none !important;
+}
+
+.is-invers{
+  background-color: var(--color-text);
+  color: var(--color-backgrounds);
+}
+
+.is-red{
+  background-color: var(--color-red);
+  color: var(--color-text);
+}
+
+.is-black{
+  background-color: rgba(0,0,0,0.5);
+  color: var(--color-text);
+}
+
+.is-really-black{
+  background-color: var(--color-backgrounds);
+  color: var(--color-text);
+}

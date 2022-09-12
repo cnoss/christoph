@@ -1,0 +1,187 @@
+backend:
+  #name: git-gateway
+  name: github
+  #branch: master # Branch to update (optional; defaults to master)
+  repo: cnoss/christoph
+
+publish_mode: editorial_workflow
+site_url: https://christophsteinke.com/
+
+# These lines should *not* be indented
+media_folder: "content/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Seiten"
+    files:
+      - name: "statement-en"
+        label: "Artist Statement (en)"
+        file: "content/030-statement/index.en.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/simpleText"}
+          - {label: "id", name: "id", widget: "hidden", default: "statement"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-red"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "typo is-weired"}
+          - {label: "type", name: "type", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - name: "statement-de"
+        label: "Künstler Statement (de)"
+        file: "content/030-statement/index.de.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/simpleText"}
+          - {label: "id", name: "id", widget: "hidden", default: "statement"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-red"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "typo is-weired"}
+          - {label: "type", name: "type", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - name: "vita-en"
+        label: "Vita (en)"
+        file: "content/040-bio/index.en.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/simpleText"}
+          - {label: "id", name: "id", widget: "hidden", default: "vita"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-invers"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "typo"}
+          - {label: "type", name: "type", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - name: "vita-de"
+        label: "Vita (de)"
+        file: "content/040-bio/index.de.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/simpleText"}
+          - {label: "id", name: "id", widget: "hidden", default: "vita"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-invers"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "typo"}
+          - {label: "type", name: "type", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - name: "exhibitions-en"
+        label: "Exhibitions (en)"
+        file: "content/050-exhibitions/index.en.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/exhibitions"}
+          - {label: "id", name: "id", widget: "hidden", default: "exhibitions"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-really-black"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "exhibistions"}
+          - {label: "type", name: "type", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - name: "exhibitions-de"
+        label: "Ausstellungen (de)"
+        file: "content/050-exhibitions/index.de.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/exhibitions"}
+          - {label: "id", name: "id", widget: "hidden", default: "exhibitions"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-really-black"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "exhibistions"}
+          - {label: "type", name: "type", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - name: "contact"
+        label: "Kontakt (de & en)"
+        file: "content/060-contact/index.md"
+        fields:
+          - {label: "view", name: "view", widget: "hidden", default: "views/contact"}
+          - {label: "id", name: "id", widget: "hidden", default: "contact"}
+          - {label: "cssClassesWrap", name: "cssClassesWrap", widget: "hidden", default: "section is-black"}
+          - {label: "cssClassesContent", name: "cssClassesContent", widget: "hidden", default: "typo contact"}
+          - {label: "type", name: "type", widget: "hidden", default: "footer"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Straße", name: "street", widget: "string"}
+          - {label: "PLZ", name: "plz", widget: "string"}
+          - {label: "Stadt", name: "city", widget: "string"}
+          - {label: "Land", name: "country", widget: "string"}
+          - {label: "Fon", name: "fon", widget: "string"}
+          - {label: "E-Mail", name: "email", widget: "string"}
+
+  - name: "gemaelde" # Used in routes, e.g., /admin/collections/blog
+    label: "Gemälde" # Used in the UI
+    folder: "content/010-gemaelde/items" # The path to the folder where the documents are stored
+    preview_path: "010-gemaelde/items"
+    create: true
+    slug: '{{slug}}'
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "View", name: "view", widget: "hidden", default: "views/painting"}
+      - label: 'Datum für diesen Eintrag'
+        name: 'date'
+        widget: 'date'
+        default: ''
+        format: 'DD.MM.YYYY'
+      - label: 'Breite des Artefakts in Zentimetern'
+        name: "width"
+        widget: "number"
+        default: 100
+        valueType: "int"
+        min: 60
+        max: 300
+        step: 1
+      - label: 'Höhe des Artefakts in Zentimetern'
+        name: "height"
+        widget: "number"
+        default: 100
+        valueType: "int"
+        min: 40
+        max: 300
+        step: 1
+      - label: 'Technik des Artefakts (deutsch)'
+        name: 'technique_de'
+        widget: 'string'
+      - label: 'Technik des Artefakts (englisch)'
+        name: 'technique_en'
+        widget: 'string'
+      - label: 'Erstellungsjahr Artefakt'
+        name: 'year'
+        widget: "number"
+        default: '2019'
+      - {label: "Artefakt", name: "teaser", widget: "image"}
+      - {label: "Detail 1", name: "detail-1", widget: "image"}
+      - {label: "Detail 2", name: "detail-2", widget: "image"}
+      
+  - name: "drawings" # Used in routes, e.g., /admin/collections/blog
+    label: "Zeichnungen" # Used in the UI
+    folder: "content/020-drawings/items" # The path to the folder where the documents are stored
+    preview_path: "020-gemaelde/items"
+    create: true
+    slug: '{{slug}}'
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "View", name: "view", widget: "hidden", default: "views/drawing"}
+      - label: 'Datum für diesen Eintrag'
+        name: 'date'
+        widget: 'date'
+        default: ''
+        format: 'DD.MM.YYYY'
+      - label: 'Breite des Artefakts in Zentimetern'
+        name: "width"
+        widget: "number"
+        default: 100
+        valueType: "int"
+        min: 60
+        max: 300
+        step: 1
+      - label: 'Höhe des Artefakts in Zentimetern'
+        name: "height"
+        widget: "number"
+        default: 100
+        valueType: "int"
+        min: 40
+        max: 300
+        step: 1
+      - label: 'Technik des Artefakts (deutsch)'
+        name: 'technique_de'
+        widget: 'string'
+      - label: 'Technik des Artefakts (englisch)'
+        name: 'technique_en'
+        widget: 'string'
+      - label: 'Erstellungsjahr Artefakt'
+        name: 'year'
+        widget: "number"
+        default: '2019'
+      - {label: "Artefakt", name: "teaser", widget: "image"}

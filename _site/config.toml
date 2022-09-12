@@ -1,0 +1,96 @@
+baseurl = "https://christophsteinke.com/"
+
+languageCode = "de-de"
+defaultContentLanguage = "de"
+sectionPagesMenu = "main"
+
+paginate = 5
+paginatePath = "page"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+[params]
+  baseFragment = "/"
+  template = ""
+  title = "Christoph Steinke"
+  copyright = "Christoph Steinke"
+  subtitle = "Künstler"
+
+[taxonomies]
+  paper = "papers"
+
+[outputs]
+  page = ["HTML", "JSON"]
+  section = ["HTML", "JSON"]
+  home = ["html", "JSON"]
+
+[imaging]
+  resampleFilter = "box"
+  quality = 75
+  anchor = "smart"
+
+[languages]
+  [languages.de]
+    languageName = "deutsch"
+    weight = 1
+    [languages.de.params]
+      subtitle   = "Künstler"
+  [[languages.de.menu.main]]
+    identifier = "gemaelde"
+    name   = "Gemälde"
+    weight = 2
+  [[languages.de.menu.main]]
+    identifier = "drawings"
+    name   = "Zeichnungen"
+    weight = 4
+  [[languages.de.menu.main]]
+    identifier = "bio"
+    name   = "Vita"
+    weight = 6
+  [[languages.de.menu.main]]
+    identifier = "statement"
+    name   = "Statement"
+    weight = 8
+  [[languages.de.menu.main]]
+    identifier = "exhibitions"
+    name   = "Ausstellungen"
+    weight = 10
+  [[languages.de.menu.main]]
+    identifier = "contact"
+    name   = "Kontakt"
+    weight = 12
+
+  [languages.en]
+    languageName = "english"
+    weight = 2
+    [languages.en.params]
+      subtitle = "Artist"
+  [[languages.en.menu.main]]
+    identifier = "gemaelde"
+    name   = "Paintings"
+    weight = 2
+  [[languages.en.menu.main]]
+    identifier = "drawings"
+    name   = "Drawings"
+    weight = 4
+  [[languages.en.menu.main]]
+    identifier = "bio"
+    name   = "Vita"
+    weight = 6
+  [[languages.en.menu.main]]
+    identifier = "statement"
+    name   = "Statement"
+    weight = 8
+  [[languages.en.menu.main]]
+    identifier = "exhibitions"
+    name   = "Exhibitions"
+    weight = 10
+  [[languages.en.menu.main]]
+    identifier = "contact"
+    name   = "Contact"
+    weight = 12
+

@@ -1,0 +1,29 @@
+<figure class="masonry-item">
+  <picture class="mansonry-item__image">
+    {{ $scratch := newScratch }}
+    {{ $scratch.Set "teaserPath" (replace .Params.teaser "/uploads/" "") }}
+    {{ with $.Site.GetPage "/uploads" }}
+    {{ $match := $scratch.Get "teaserPath" }}
+    {{ $images := .Resources.Match $match }}
+    {{ $teaser := index ($images) 0 }} 
+    {{ $thumb := $teaser.Resize "800x q90 Linear" }}
+    {{ $scratch.Set "lang" .Site.Language.Lang }}
+    
+    <img src="{{ $thumb.RelPermalink }}"  alt="{{.Title}}">
+    {{end}}
+  </picture>
+
+  <!--figcaption class="item-info">
+    <h3 class="item-info__title">{{.Title}}</h3>
+    <ul class="item-info__list">
+      {{if eq .Site.Language.Lang "de" }}
+      <li class="item-info__list__data">{{ .Params.technique_de }}</li>
+      {{end}}
+      {{if eq .Site.Language.Lang "en" }}
+      <li class="item-info__list__data">{{ .Params.technique_en }}</li>
+      {{end}}
+      <li class="item-info__list__data">{{ .Params.year }}</li>
+      <li class="item-info__list__data">{{ .Params.width }}x{{ .Params.height }}cm</li>
+    </ul>
+  </figcaption-->
+</figure>

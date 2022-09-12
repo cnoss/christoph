@@ -1,0 +1,6 @@
+<section {{ with .Params.id }}id="{{ . }}" {{ end }} {{ with .Params.cssClassesWrap }}class="{{.}}" {{ end }}>
+  <div {{ with .Params.cssClassesContent }}class="{{.}}" {{ end }}>
+    <h2># {{ .Title }}</h2>
+    <p>{{ .Content }}</p>
+  </div>
+</section>

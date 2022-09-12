@@ -1,0 +1,22 @@
+<figure class="masonry-item">
+  <picture class="mansonry-item__image">
+
+    {{ $langkey := .langkey }}
+    {{ $uploads := .uploads }}
+    {{ $teaserPath := (replace .params.Params.teaser "/uploads/" "") }}
+    {{ $images := $uploads.Match $teaserPath }}
+    {{ $teaser := index ($images) 0 }} 
+    {{ $thumb := $teaser.Resize "800x q90 Linear" }}
+    <img src="{{ $thumb.RelPermalink }}"  alt="{{.Title}}">
+
+  </picture>
+  {{ $tech := (printf "technique_%s" $langkey) }}
+  <figcaption class="item-info">
+    <h3 class="item-info__title">{{.params.Title}}</h3>
+    <ul class="item-info__list">
+      <li class="item-info__list__data">{{ index .params.Params $tech }}</li>
+      <li class="item-info__list__data">{{ .params.Params.year }}</li>
+      <li class="item-info__list__data">{{ .params.Params.width }}x{{ .params.Params.height }}cm</li>
+    </ul>
+  </figcaption>
+</figure>

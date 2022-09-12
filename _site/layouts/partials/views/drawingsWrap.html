@@ -1,0 +1,11 @@
+<section id="drawings" class="screen">
+  <div class="masonry-wrapper">
+    <div class="masonry">
+    {{ $langkey := .langkey }}
+    {{ $uploads := .uploads }}
+    {{ range $page := .params.Pages.Reverse }}
+    {{ partial "views/painting.html" (dict "params" . "langkey" $langkey "uploads" $uploads) }}
+    {{ end }}
+    </div>
+  </div>
+</section>
